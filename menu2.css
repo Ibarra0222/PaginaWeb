@@ -1,0 +1,49 @@
+ul.nav {
+
+    list-style: none;
+    display: block;
+    width: 200px;
+    position: relative;
+    
+    -webkit-background-size: 50% 100%;
+    -moz-background-size: 50% 100%;
+    -e-background-size: 50% 100%;
+    -o-background-size: 50% 100%;
+}
+ul.nav li a {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -e-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+ul.nav li a {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -e-transition: all 0.3s ease-out;
+    -o-: all 0.3s ease-out;
+    background: rgba(0,0,0,0.0);
+    color: gray;
+    padding: 7px 15px 7px 15px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -e-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    -e-border-bottom-right-radius: 5px;
+    -o-border-bottom-right-radius: 5px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    -e-box-shadow: 2px 2px 4px #888;
+    -o-box-shadow: 2px 2px 4px #888;
+    font-size: 15px;
+}
+ul.nav li a:hover {
+    background: rgba(0,0,0,1);
+    color: white;
+    padding: 7px 15px 7px 30px;
+}

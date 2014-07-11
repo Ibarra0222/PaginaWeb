@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Productos</title>
+	<link rel="stylesheet" type="text/css" href="CSS/cssProd.css">
+	<link rel="stylesheet" type="text/css" href="menu2.css">
+	<link rel="stylesheet" type="text/css" href="CSS/productos.css">
+	<script type="text/javascript" src="Scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="Scripts/AJAX.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Carme' rel='stylesheet' type='text/css'>
+
+
+	<script type="text/javascript">
+		//Estas son las funciones para mandar llamar los archivos que se cargarán cuando se haga click en los botones
+  		$(document).ready(function (){
+       	$.post("CargaProductos.php","param1=x&param2=y&param3=z", function(CargaProductos){
+       	$("#Contenido").html(CargaProductos);
+            });
+       	});
+    </script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+   		$('#btn1').click(function(){
+     	$.post(
+	    "CargaProductos.php", $("#lampara").serialize(),function(a){
+                $('#Contenido').html(a);
+	    			});
+  			});
+		});
+</script>
+
+</head>
+<body>
+	<div id="contemp" class="productos">
+		<header>
+			<div class="logo">
+	    	<img  id="logo" src="imagenes/logo.png" alt="Led Factory"/>
+	        </div>
+	        <div id="titulo">
+	        	<span>Tel: 91 234 68 91</span>
+	        </div>
+	        <nav>
+            	<ul id="menu">
+            	<li><a href="home.html" title="HOME" class="transicion">HOME</a></li>
+            	<li><a href="empresa.html" title="EMPRESA" class="transicion">EMPRESA</a></li>
+            	<li class="li_submenu"><a href="javascript:void(0);">ILUMINACIÓN LED</a>
+                	<div class="sub">
+                    <ul class="ul_submenu transicion">
+                        <li><a href="conceptos.html" title="Conceptos" class="transicion">Conceptos en el LED</a></li>
+                        <li><a href="ventajas.html" title="Ventajas" class="transicion">Ventajas del LED</a></li>
+                    </ul>
+                    </div>
+                </li>
+            	<li><a href="productos.html" title="PRODUCTOS" class="transicion">PRODUCTOS</a></li>
+            	<li><a href="noticias.html" title="NOTICIAS" class="transicion">NOTICIAS</a></li>
+            	<li><a href="documentacion.html" title="DOCUMENTACIÓN" class="transicion">DOCUMENTACIÓN</a></li>
+            	<li><a href="contacto.html" title="CONTACTO" class="transicion">CONTACTO</a></li>
+            </ul>
+            </nav> 
+		</header>
+		<div class="solo"></div>
+		<section id="descripcion">
+			<h1>Productos</h1>
+			<div class="navbox">
+			<ul class="nav">
+				<li>
+					<a href="#" id="btn1">LED Bar Lights</a>
+				</li>
+				<li>
+					<a href="#">LED Bulbs</a>
+				</li>
+				<li>
+					<a href="#">LED Spot Lights</a>
+				</li>
+				<li>
+					<a href="#">LED Par Lights</a>
+				</li>
+				<li>
+					<a href="#">LED Panels</a>
+				</li>
+				<li>
+					<a href="#">LED Flood Lights</a>
+				</li>
+				<li>
+					<a href="#">LED Downlights</a>
+				</li>
+
+			</ul>
+			</div>
+			<div id="Contenido"></div>
+		</section>
+
+		<form name="form1" method="post" id="lampara" >	
+			<input type="hidden" name="tipo" id="tipo" value="ledBar">
+		</form>
+
+		<div class="solo2"></div>
+		<footer>
+                <div class="wrap">
+                    <div id="prefooter">
+                        <p>Direccion:</br>Calle 20 de Noviembre, 5 </br>23233 Durango </br> TEL:(618)8141517</br> info@ledfactory.com</p>
+                        <p>Direccion:</br>Calle 20 de Noviembre, 5 </br>23233 Durango </br> TEL:(618)8141517</br> info@ledfactory.com</p>
+                        <p>Direccion:</br>Calle 20 de Noviembre, 5 </br>23233 Durango </br> TEL:(618)8141517</br> info@ledfactory.com</p>
+                        <p>Direccion:</br>Calle 20 de Noviembre, 5 </br>23233 Durango </br> TEL:(618)8141517</br> info@ledfactory.com</p>
+                        <p>Direccion:</br>Calle 20 de Noviembre, 5 </br>23233 Durango </br> TEL:(618)8141517</br> info@ledfactory.com</p>
+                    </div>
+                </div>
+          </footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+	font-family: "Arial",sans-serif;
+}
+.posts{
+	padding:.5em;
+}
+.posts .post{
+	background:#fff;
+	margin-bottom:.5em;
+	width: 25%;
+	display: inline-table;
+	border: 1px dotted;
+}
+.posts .post .descripcion .detalles{
+	height:160px;
+	margin-left:130px;
+
+}
+.posts .post .descripcion .detalles .titulo{
+	font-size:15px;
+	font-style:italic;
+	margin:0;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	padding:.5em .5em 0 0;
+}
+
+.posts .post .descripcion .imagen{
+	float:left;
+	margin:0;
+	padding:0;
+}
+.posts .post .descripcion .imagen img{
+	height:160px;
+	width:120px
+}
+#precio{
+	color: #A4A4A4;
+	font-weight: bold;
+}
